@@ -1,0 +1,41 @@
+
+
+.resizable-box {
+    position: relative;
+    /* background-color: #f30404; */
+    border: 3px solid #c6c4c4;
+    overflow: hidden;
+    margin-left: 10px; /* Adjust to position the resize handle */
+  }
+  
+  .resizer {
+    width: 20px; /* Width of the resize handle */
+    height: 100%; /* Height of the resize handle (full height of the box) */
+    position: absolute;
+    right: -20px; /* Position the resize handle to the left side */
+    top: 0;
+    cursor: ew-resize; /* Cursor style for resizing for left and right*/
+    /* cursor: ns-resize; */
+     /* Cursor style for resizing for top and bottom*/
+    background-color: #cccccc;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .arrow.left {
+    left: -40px;
+  }
+  
+  .arrow.right {
+    right: -40px;
+  }
+  
